@@ -1,1 +1,423 @@
 /* место для вашего кода */
+
+/* шапка */
+.header {
+    padding: 92px 24px 96px 24px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1fr;
+}
+
+.header img { /* размер логотипа */
+    place-self: center;
+    width: 129.11px;
+    height: 104.65px;
+}
+
+.header__nav { /* навигация */
+    place-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 1fr;
+    gap: 0 13px;
+}
+
+.header__nav-box { /* бокс для ссылки */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__nav-box__marker { /* маркер */
+    margin-right: 12px;
+    width: 7px;
+    height: 7px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+.a__none-line { /* none декорации ссылки */
+    text-decoration: none;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.13px;
+}
+
+.header__nav-box a { /* нижняя линия для ссылки */
+    text-underline-position: under;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.13px;
+    letter-spacing: 0.01em;
+}
+
+.header__address { /* контакты */
+    justify-self: end;
+    align-self: center;
+    width: 240.52px;
+    font-style: normal;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    place-items: start;
+}
+
+.header__address p { /* контакты | адресс */
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.3px;
+}
+
+.header__address a { /* контакты | ссылки */
+    text-underline-position: under;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.3px;
+    letter-spacing: 0.01em;
+}
+
+/* оно тебе надо */
+.main { /* фон для "оно тебе надо" */
+    background: url(../images/cover.jpg) no-repeat center / cover;
+    height: 757px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+.main-section { /* бокс для "оно тебе надо" */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* черный фон 60% "оно тебе надо" */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+}
+
+.main-section__article { /* фон для "оно тебе надо" */
+    place-self: center;
+    width: 100%;
+    padding: 50px 50px 0 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.main-section__article__h1-1 { /* текст "оно" */
+    justify-self: start;
+}
+
+.main-section__article__h1-1__span-1 { /* буква "о" */
+    font-family: Raleway;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 115px;
+    letter-spacing: 0.3em;
+}
+
+.main-section__article__h1-1__span-2 { /* буквы "н, о" */
+    font-family: Raleway;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 115px;
+    letter-spacing: 0.6em;
+}
+
+.main-section__article__h1-2 { /* текст "тебе" */
+    justify-self: center;
+}
+
+.main-section__article__h1-2__span-1 { /* буквы "т, е" */
+    font-family: Raleway;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 100px;
+    letter-spacing: 0.3em;
+}
+
+.main-section__article__h1-2__span-2 { /* буквы "б, е" */
+    font-family: Raleway;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 100px;
+    letter-spacing: 0.6em;
+}
+
+.main-section__article__h1-3 { /* текст "надо" */
+    justify-self: end;
+}
+
+.main-section__article__h1-3__span-1 { /* буква "н" */
+    font-family: Raleway;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 100px;
+    letter-spacing: 0.6em;
+}
+
+.main-section__article__h1-3__span-2 { /* буквы "а, д" */
+    font-family: Raleway;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 100px;
+    letter-spacing: 0.3em;
+}
+
+.main-section__article__h1-3__span-3 { /* буква "о" */
+    font-family: Raleway;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 100px;
+}
+
+.main-section__footer { /* бокс для "оно тебе надо" | подвал */
+    width: 100%;
+    padding: 50px 50px 50px 0;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr;
+    place-items: center;
+}
+
+.main-section__footer h2 { /* подвал текст */
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    word-spacing: 1.1em;
+}
+
+.main-section__footer__none-line { /* подвал ссылка */
+    text-decoration: none;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 12px 32px 11px 31px;
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 25.83px;
+}
+
+
+/* лоты */
+.section-lots {
+    height: 692px;
+    margin: 179px 24px 0 24px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    place-content: space-between;
+}
+
+.section-lots h2 {
+    margin-left: 40px;
+    text-transform: uppercase;
+    font-family: Raleway;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46.96px;
+}
+
+.section-lots a {
+    margin-left: 40px;
+    text-underline-position: under;
+    text-decoration-thickness: 1px;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.48px;
+}
+
+.section-lots__section-box { /* бокс для карточек */
+    height: 563px;
+    color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0 25px;
+}
+
+.section-lots__section-box p {
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.section-lots__article__background-1 { /* фон для первой карточки */
+    background: url(../images/card-lot-01.jpg) no-repeat center / cover;
+}
+
+.section-lots__article__background-2 { /* фон для второй карточки */
+    background: url(../images/card-lot-02.jpg) no-repeat center / cover;
+}
+
+.section-lots__article__background-3 { /* фон для третьей карточки */
+    background: url(../images/card-lot-03.jpg) no-repeat center / cover;
+}
+
+.section-lots__article__background { /* черный фон для всех карточек */
+    background-color: rgba(0, 0, 0, 0.6); /* черный фон, прозрачность 60% */
+    width: 100%;
+    height: 100%;
+    padding: 51px 40px 48px 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    align-content: space-between;
+}
+
+.section-lots__article-line { /* линия для заголовков у карточек */
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-position: under;
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26.4px;
+}
+
+/* об аукционе */
+.section-about {
+    margin-top: 146px;
+    padding: 35px 0 0 47px;
+    width: 1052px;
+    height: 595px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+    gap: 0 72px;
+}
+
+.section-about__div-background { /* фон для логотипа */
+    align-self: start;
+    background-color: rgb(0, 0, 0);
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    display: grid;
+    grid-template: 1fr / 1fr;
+}
+
+.section-about__div-background img {
+    place-self: center;
+    width: 141.54px;
+    height: 112.55px;
+}
+
+.section-about__article-text { /* бокс для текста */
+    align-self: end;
+    margin-top: 98px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    justify-content: start;
+    align-items: center;
+}
+
+.section-about__article-text h2 {
+    margin-bottom: 100px;
+    text-transform: uppercase;
+    font-family: Raleway;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46.96px;
+}
+
+.section-about__article-text p {
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+}
+
+.section-about__article-text p + p {
+    margin-top: 24px;
+}
+
+/* подвал */
+.footer {
+    margin: 180px 50px 88px 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__address { /* контакты */
+    width: 240.52px;
+    height: 98px;
+    font-style: normal;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    place-items: start;
+}
+
+.footer__address a {
+    text-underline-position: under;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.3px;
+    letter-spacing: 0.01em;
+}
+
+.footer__address p {
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.3px;
+}
+
+.footer__nav-menu { /* меню */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    place-items: center;
+}
+
+.footer__nav-menu a {
+    text-underline-position: under;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.13px;
+}
+
+.footer__nav-link { /* ссылки на соц. сети */
+    width: 240px;
+    height: 48px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 1fr;
+    place-items: center;
+    gap: 0 48px;
+}
+
+.YouTube { /* иконка YouTube */
+    background: url(../images/yt.svg) no-repeat center / contain;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.VK { /* иконка VK */
+    background: url(../images/vk.svg) no-repeat center / contain;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.Pinterest { /* иконка Pinterest */
+    background: url(../images/pinterest.svg) no-repeat center / contain;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
