@@ -86,7 +86,6 @@ a {
     font-weight: 700;
     text-transform: uppercase;
     width: 1000px;
-    min-height: 355px;
     margin-top: 29px;
     display: grid;
     grid-template-rows: 1fr auto 1fr;
@@ -199,31 +198,29 @@ a {
     line-height: 23px;
 }
 
-.main__section-lots__article { /* бокс для карточек */
+.main__section-lots__div { /* бокс для карточек */
     color: rgb(255, 255, 255);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 563px;
     gap: 0 25px;
 }
 
-.main__section-lots__a-lot-1 { /* первый лот */
+.main__section-lots__a-lot-film { /* первый лот */
     background: url(../images/card-lot-01.jpg) no-repeat center / cover;
     width: 334px;
-    height: 563px;
     text-decoration: none;
 }
 
-.main__section-lots__a-lot-2 { /* второй лот */
+.main__section-lots__a-lot-book { /* второй лот */
     background: url(../images/card-lot-02.jpg) no-repeat center / cover;
     width: 334px;
-    height: 563px;
     text-decoration: none;
 }
 
-.main__section-lots__a-lot-3 { /* третий лот */
+.main__section-lots__a-lot-picture { /* третий лот */
     background: url(../images/card-lot-03.jpg) no-repeat center / cover;
     width: 334px;
-    height: 563px;
     text-decoration: none;
 }
 
@@ -318,7 +315,7 @@ a {
     align-items: start;
 }
 
-.footer__address-contact {
+.footer__address-contact { /* контакты */
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -331,7 +328,7 @@ a {
     grid-template-rows: repeat(3, auto);
 }
 
-.footer__ul-menu {
+.footer__ul-menu { /* меню */
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -353,20 +350,20 @@ a {
     gap: 0 48px;
 }
 
-.icon {
+.icon { /* размер иконок */
     width: 48px;
     height: 48px;
     border-radius: 50%;
 }
 
-.youtube {
+.youtube { /* иконка */
     background: url(../images/yt.svg) no-repeat center / contain;
 }
 
-.vk {
+.vk { /* иконка */
     background: url(../images/vk.svg) no-repeat center / contain;
 }
 
-.pinterest {
+.pinterest { /* иконка */
     background: url(../images/pinterest.svg) no-repeat center / contain;
 }
